@@ -1,8 +1,12 @@
+import Header from "./components/Header/Header";
+import Home from "./views/Home";
+
 const App = () => {
   return (
-    <div>
-      <h1>Start</h1>
-    </div>
+    <>
+      <Header />
+      <Home />
+    </>
   );
 };
 

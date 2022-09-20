@@ -1,0 +1,35 @@
+@import "./settings.scss";
+@import "./typography.scss";
+@import "./normalize.scss";
+
+body {
+  background: $light-color;
+  font-family: $font-text;
+  color: $font-color;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.btn {
+  padding: 12px 130px;
+  border: none;
+  cursor: pointer;
+  border-radius: $radius;
+}
+
+.accept {
+  transition: $transition;
+  color: $light-color;
+  background-color: $second-color-hover;
+  font-weight: bold;
+
+  &:hover {
+    background: $second-color;
+    transition: $transition;
+    color: $font-color;
+  }
+}

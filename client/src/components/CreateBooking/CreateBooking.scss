@@ -1,0 +1,37 @@
+@import "../../styles/global.scss";
+
+.actionBooking {
+  margin-top: 20px;
+
+  fieldset {
+    padding: 20px;
+    border: 1px solid $dark-color;
+    border-radius: $radius;
+    legend {
+      font-weight: bold;
+      padding: 0 6px;
+      font-size: 20px;
+    }
+  }
+}
+
+.inputWrapper {
+  margin: 10px;
+  font-size: 18px;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  label {
+    width: 30%;
+  }
+  input {
+    padding: 12px;
+    border-radius: $radius;
+    border: none;
+    width: 400px;
+  }
+  input[type="submit"] {
+    margin: 16px auto 0;
+    width: 200px;
+  }
+}
