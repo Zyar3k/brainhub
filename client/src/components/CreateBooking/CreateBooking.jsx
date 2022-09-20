@@ -9,19 +9,19 @@ const CreateBooking = () => {
         <fieldset>
           <legend>Make an appointment</legend>
           <div className="inputWrapper">
-            <label for="name">First name:</label>
+            <label htmlFor="name">First name:</label>
             <input type="text" id="name" name="name" />
           </div>
           <div className="inputWrapper">
-            <label for="lastName">Last name:</label>
+            <label htmlFor="lastName">Last name:</label>
             <input type="text" id="lastName" name="lastName" />
           </div>
           <div className="inputWrapper">
-            <label for="email">Email:</label>
+            <label htmlFor="email">Email:</label>
             <input type="email" id="email" name="email" />
           </div>
           <div className="inputWrapper">
-            <label for="bookingDate">Date:</label>
+            <label htmlFor="bookingDate">Date:</label>
             <input type="date" id="bookingDate" name="bookingDate" />
           </div>
           <div className="inputWrapper">
