@@ -15,6 +15,9 @@ mongoose.connect(mongoUri, {
   useUnifiedTopology: true,
 });
 
+const bookingsRouter = require("./routes/bookings.route.js");
+app.use("/bookings", bookingsRouter);
+
 const start = async () => {
   try {
     app.listen(PORT, () => {
