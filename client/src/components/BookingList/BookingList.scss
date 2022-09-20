@@ -1,0 +1,20 @@
+@import "../../styles/global.scss";
+
+.booking {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $dark-color;
+  .number {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .name,
+  .email,
+  .date,
+  .actions {
+    width: 20%;
+  }
+}
