@@ -1,0 +1,18 @@
+{
+  "name": "brainhub-recruitment",
+  "version": "1.0.0",
+  "description": "recruitment task",
+  "scripts": {
+    "start": "npm-run-all -p -l start:*",
+    "start:server": "cd server && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zyar3k/brainhub.git"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/Zyar3k/brainhub#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
