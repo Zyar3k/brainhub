@@ -11,7 +11,7 @@ const BookingList = () => {
       <h3 className="bookingsHeader">Our appointments</h3>
       <div className="bookings">
         {bookings.length === 0 ? (
-          "Loading..."
+          "No appointments in the near future..."
         ) : (
           <>
             {bookings.map((book, index) => (
@@ -22,7 +22,10 @@ const BookingList = () => {
                 </p>
                 <p className="email">{book.email}</p>
                 <p className="date">{book.bookingDate}</p>
-                <p className="actions"></p>
+                <p className="actions">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <i class="fa-solid fa-trash-can"></i>
+                </p>
               </div>
             ))}
           </>

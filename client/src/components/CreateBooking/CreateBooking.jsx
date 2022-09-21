@@ -3,6 +3,7 @@ import request from "../../helpers/request";
 import { GlobalContext } from "../../context/GlobalProvider";
 
 import "./CreateBooking.scss";
+import InputWrapper from "./InputWrapper";
 
 const CreateBooking = () => {
   const { fetchData } = useContext(GlobalContext);
@@ -51,32 +52,30 @@ const CreateBooking = () => {
       <form className="form" onSubmit={handleSubmit}>
         <fieldset>
           <legend>Make an appointment</legend>
-          <div className="inputWrapper">
-            <label htmlFor="name">First name:</label>
-            <input ref={inputName} type="text" id="name" name="name" />
-          </div>
-          <div className="inputWrapper">
-            <label htmlFor="lastName">Last name:</label>
-            <input
-              ref={inputLastName}
-              type="text"
-              id="lastName"
-              name="lastName"
-            />
-          </div>
-          <div className="inputWrapper">
-            <label htmlFor="email">Email:</label>
-            <input ref={inputEmail} type="email" id="email" name="email" />
-          </div>
-          <div className="inputWrapper">
-            <label htmlFor="bookingDate">Date:</label>
-            <input
-              ref={inputBookingDate}
-              type="date"
-              id="bookingDate"
-              name="bookingDate"
-            />
-          </div>
+          <InputWrapper
+            inputName={inputName}
+            name="name"
+            type="text"
+            title="First name"
+          />
+          <InputWrapper
+            inputName={inputLastName}
+            name="lastName"
+            type="text"
+            title="Last name"
+          />
+          <InputWrapper
+            inputName={inputEmail}
+            name="email"
+            type="email"
+            title="Email"
+          />
+          <InputWrapper
+            inputName={inputBookingDate}
+            name="bookingDate"
+            type="date"
+            title="Date"
+          />
           {error ? <h4>Please fill all fields</h4> : null}
           <div className="inputWrapper">
             <input type="submit" value="Submit" className="btn accept" />

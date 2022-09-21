@@ -17,6 +17,13 @@
   .actions {
     width: 20%;
   }
+  .actions {
+    i {
+      color: black;
+      opacity: 0.5;
+      margin: 0 6px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
