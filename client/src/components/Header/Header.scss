@@ -10,3 +10,11 @@
     color: $light-color;
   }
 }
+
+@media (max-width: 767px) {
+  .header {
+    .logo {
+      padding: 10px;
+    }
+  }
+}

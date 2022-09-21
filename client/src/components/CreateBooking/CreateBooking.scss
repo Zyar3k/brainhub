@@ -57,3 +57,29 @@ input.accept {
     color: $font-color;
   }
 }
+
+@media (max-width: 1200px) {
+  .inputWrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .actionBooking {
+    fieldset {
+      padding: 10px;
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+
+  .inputWrapper {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    label {
+      margin: 10px 0;
+    }
+    input {
+      width: 100%;
+    }
+  }
+}

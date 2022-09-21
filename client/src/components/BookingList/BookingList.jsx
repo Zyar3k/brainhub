@@ -8,7 +8,7 @@ const BookingList = () => {
 
   return (
     <section>
-      <h3>Our appointments</h3>
+      <h3 className="bookingsHeader">Our appointments</h3>
       <div className="bookings">
         {bookings.length === 0 ? (
           "Loading..."

@@ -18,3 +18,26 @@
     width: 20%;
   }
 }
+
+@media (max-width: 767px) {
+  .bookingsHeader {
+    text-align: center;
+  }
+  .bookings {
+    padding: 10px;
+  }
+  .booking {
+    flex-wrap: wrap;
+    .number {
+      justify-content: left;
+
+      width: 100%;
+    }
+    .name,
+    .email,
+    .date,
+    .actions {
+      width: 50%;
+    }
+  }
+}
