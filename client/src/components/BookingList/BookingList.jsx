@@ -1,12 +1,11 @@
 import { useContext } from "react";
-
 import { GlobalContext } from "../../context/GlobalProvider";
 
 import "./BookingList.scss";
 
 const BookingList = () => {
   const { bookings } = useContext(GlobalContext);
-  console.log(bookings);
+
   return (
     <section>
       <h3>Our appointments</h3>
@@ -16,7 +15,7 @@ const BookingList = () => {
         ) : (
           <>
             {bookings.map((book, index) => (
-              <div className="booking">
+              <div key={index} className="booking">
                 <p className="number">{index + 1}</p>
                 <p className="name">
                   {book.name} {book.lastName}

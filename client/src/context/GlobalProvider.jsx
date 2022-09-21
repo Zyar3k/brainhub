@@ -28,7 +28,9 @@ const StoreProvider = ({ children }) => {
     fetchData();
   }, []);
   return (
-    <GlobalContext.Provider value={{ state, bookings: state.bookings }}>
+    <GlobalContext.Provider
+      value={{ state, bookings: state.bookings, fetchData }}
+    >
       {children}
     </GlobalContext.Provider>
   );
